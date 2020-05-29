@@ -18,9 +18,9 @@ def bwplaatje(fname):
     r = np.argwhere(nim[:, :, 0] > 128)
     i = np.array([nim[r[:, 0], r[:, 1], 2]]).astype("float64").T / 255
     data = np.append(r.astype("float64"), i, 1)
-    # print(data)
-    data[:, 0] -= (w - 1) / 2
-    data[:, 1] -= (h - 1) / 2
-    data[:, 1] *= -1
-
+    print(data)
+    data[:, 0] -= (h - 1) / 2
+    data[:, 1] -= (w - 1) / 2
+    data[:, 0] *= -1
+    print(data)
     return data
