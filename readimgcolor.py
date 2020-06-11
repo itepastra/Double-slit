@@ -27,4 +27,5 @@ def bwplaatje(fname):
     data[:, 0] -= (h - 1) / 2
     data[:, 1] -= (w - 1) / 2
     data[:, 0] *= -1
+    print(data)
     return data
