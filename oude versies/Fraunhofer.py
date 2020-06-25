@@ -8,7 +8,7 @@ import readimgcolor
 fname = "test1.png"
 wavelength = 500e-9
 pixelsize = (0.05e-3, 0.5e-3)
-pixelamt = (5, 50)
+pixelamt = (5, 5)
 intensity = 1
 emitters = np.array([0, 0, 0, 0])
 observplanez = 3.05e0
